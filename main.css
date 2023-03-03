@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr 200px;
+	grid-template-areas:
+		'header header'
+		'main sidebar'
+		'footer footer';
+}
+
+.header {
+	grid-area: header;
+	background-color: aliceblue;
+}
+.main {
+	grid-area: main;
+	background-color: antiquewhite;
+}
+.sidebar {
+	grid-area: sidebar;
+}
+.footer {
+	grid-area: footer;
+	background-color: burlywood;
+}
+
+.banner {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.banner iframe {
+	border: 0;
+}
